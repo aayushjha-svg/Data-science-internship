@@ -1,0 +1,310 @@
+{
+ "n_rows": 1704,
+ "n_countries": 142,
+ "pos_rate": 29.0,
+ "pos_rate_by_year": {
+  "1952": 4,
+  "1957": 6,
+  "1962": 11,
+  "1967": 18,
+  "1972": 21,
+  "1977": 27,
+  "1982": 31,
+  "1987": 35,
+  "1992": 38,
+  "1997": 46,
+  "2002": 53,
+  "2007": 58
+ },
+ "n_train": 1272,
+ "n_test": 432,
+ "countries_train": 106,
+ "countries_test": 36,
+ "pos_train": 29.4,
+ "pos_test": 27.8,
+ "cv": {
+  "Baseline (majority class)": [
+   0.705,
+   0.092,
+   0.5,
+   0.0
+  ],
+  "Logistic regression": [
+   0.896,
+   0.035,
+   0.961,
+   0.021
+  ],
+  "Decision tree (depth 3)": [
+   0.858,
+   0.047,
+   0.889,
+   0.057
+  ],
+  "Random forest": [
+   0.887,
+   0.023,
+   0.962,
+   0.008
+  ]
+ },
+ "test": {
+  "Baseline (majority class)": {
+   "acc": 0.722,
+   "prec": 0.0,
+   "rec": 0.0,
+   "f1": 0.0,
+   "auc": 0.5,
+   "train_acc": 0.706
+  },
+  "Logistic regression": {
+   "acc": 0.9,
+   "prec": 0.798,
+   "rec": 0.858,
+   "f1": 0.827,
+   "auc": 0.959,
+   "train_acc": 0.91
+  },
+  "Decision tree (depth 3)": {
+   "acc": 0.891,
+   "prec": 0.823,
+   "rec": 0.775,
+   "f1": 0.798,
+   "auc": 0.919,
+   "train_acc": 0.892
+  },
+  "Random forest": {
+   "acc": 0.898,
+   "prec": 0.828,
+   "rec": 0.8,
+   "f1": 0.814,
+   "auc": 0.958,
+   "train_acc": 0.947
+  }
+ },
+ "cm": {
+  "Baseline (majority class)": [
+   [
+    312,
+    0
+   ],
+   [
+    120,
+    0
+   ]
+  ],
+  "Logistic regression": [
+   [
+    286,
+    26
+   ],
+   [
+    17,
+    103
+   ]
+  ],
+  "Decision tree (depth 3)": [
+   [
+    292,
+    20
+   ],
+   [
+    27,
+    93
+   ]
+  ],
+  "Random forest": [
+   [
+    292,
+    20
+   ],
+   [
+    24,
+    96
+   ]
+  ]
+ },
+ "overfit_best_depth": 7,
+ "overfit_train_cv": [
+  [
+   1,
+   0.875,
+   0.858
+  ],
+  [
+   2,
+   0.875,
+   0.858
+  ],
+  [
+   3,
+   0.892,
+   0.858
+  ],
+  [
+   4,
+   0.92,
+   0.856
+  ],
+  [
+   5,
+   0.932,
+   0.862
+  ],
+  [
+   6,
+   0.95,
+   0.854
+  ],
+  [
+   7,
+   0.965,
+   0.867
+  ],
+  [
+   8,
+   0.979,
+   0.843
+  ],
+  [
+   9,
+   0.987,
+   0.85
+  ],
+  [
+   10,
+   0.994,
+   0.862
+  ],
+  [
+   11,
+   0.997,
+   0.861
+  ],
+  [
+   12,
+   0.998,
+   0.851
+  ]
+ ],
+ "coef": {
+  "logGDP": 2.41,
+  "logPop": 0.13,
+  "year": 1.61,
+  "continent: Americas": 1.37,
+  "continent: Asia": 0.8,
+  "continent: Europe": 3.54,
+  "continent: Oceania": 3.01
+ },
+ "imp": {
+  "logGDP": 0.563,
+  "logPop": 0.078,
+  "year": 0.134,
+  "continent: Americas": 0.019,
+  "continent: Asia": 0.016,
+  "continent: Europe": 0.171,
+  "continent: Oceania": 0.02
+ },
+ "best": "Logistic regression",
+ "n_wrong": 43,
+ "n_fp": 26,
+ "n_fn": 17,
+ "wrong_by_country": {
+  "Hungary": 6,
+  "Saudi Arabia": 5,
+  "Turkey": 5,
+  "Gabon": 3,
+  "Hong Kong, China": 3,
+  "Jamaica": 3
+ },
+ "wrong_by_continent": {
+  "Europe": 16,
+  "Asia": 14,
+  "Africa": 7,
+  "Americas": 6
+ },
+ "wrong_detail": {
+  "Gabon": {
+   "FP": 3,
+   "FN": 0,
+   "years": [
+    1997,
+    2002,
+    2007
+   ]
+  },
+  "Hong Kong, China": {
+   "FP": 0,
+   "FN": 3,
+   "years": [
+    1967,
+    1972,
+    1977
+   ]
+  },
+  "Hungary": {
+   "FP": 6,
+   "FN": 0,
+   "years": [
+    1967,
+    1972,
+    1977,
+    1982,
+    1987,
+    1992
+   ]
+  },
+  "Jamaica": {
+   "FP": 0,
+   "FN": 3,
+   "years": [
+    1977,
+    1982,
+    1987
+   ]
+  },
+  "Saudi Arabia": {
+   "FP": 5,
+   "FN": 0,
+   "years": [
+    1972,
+    1977,
+    1982,
+    1987,
+    1992
+   ]
+  },
+  "Turkey": {
+   "FP": 5,
+   "FN": 0,
+   "years": [
+    1977,
+    1982,
+    1987,
+    1992,
+    1997
+   ]
+  }
+ },
+ "wrong_near_threshold": 27,
+ "near_threshold_total": 96,
+ "share_wrong_near": 76.7,
+ "wrong_by_year_bucket": {
+  "1980+": 26,
+  "before 1980": 17
+ },
+ "test_by_year_bucket": {
+  "before 1980": 216,
+  "1980+": 216
+ },
+ "temporal": {
+  "acc": 0.884,
+  "auc": 0.956,
+  "recall": 0.859,
+  "base": 0.512
+ },
+ "temporal_rf": {
+  "acc": 0.82,
+  "auc": 0.957
+ }
+}

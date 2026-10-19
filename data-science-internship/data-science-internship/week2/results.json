@@ -1,0 +1,185 @@
+{
+ "n_countries": 142,
+ "pop_weighted_le": {
+  "1952": 48.9,
+  "1957": 52.1,
+  "1962": 52.3,
+  "1967": 57.0,
+  "1972": 59.5,
+  "1977": 61.2,
+  "1982": 62.9,
+  "1987": 64.4,
+  "1992": 65.6,
+  "1997": 66.8,
+  "2002": 67.8,
+  "2007": 68.9
+ },
+ "median_le": {
+  "1952": 45.1,
+  "2007": 71.9
+ },
+ "below50_countries": {
+  "1952": 82,
+  "2007": 19
+ },
+ "below50_popshare": {
+  "1952": 64.1,
+  "2007": 6.5
+ },
+ "gdp_median": {
+  "1952": 1969,
+  "2007": 6124
+ },
+ "sd_le": {
+  "1952": 12.2,
+  "2007": 12.1
+ },
+ "min_max_le": {
+  "1952": [
+   28.8,
+   72.7
+  ],
+  "2007": [
+   39.6,
+   82.6
+  ]
+ },
+ "gap_best_worst": {
+  "1952": 43.9,
+  "2007": 43.0
+ },
+ "top_gainers": {
+  "Oman": 38.1,
+  "Vietnam": 33.8,
+  "Indonesia": 33.2,
+  "Saudi Arabia": 32.9,
+  "Libya": 31.2
+ },
+ "bottom_gainers": {
+  "Zimbabwe": -5.0,
+  "Swaziland": -1.8,
+  "Zambia": 0.3,
+  "Lesotho": 0.5,
+  "Botswana": 3.1
+ },
+ "mean_gain": 17.9,
+ "n_lost": 2,
+ "cambodia_1977": 31.2,
+ "rwanda_1992": 23.6,
+ "rwanda_1987": 44.0,
+ "zim": {
+  "1987": 62.4,
+  "1992": 60.4,
+  "2002": 40.0,
+  "2007": 43.5
+ },
+ "bots": {
+  "1987": 63.6,
+  "1992": 62.7,
+  "2002": 46.6
+ },
+ "drop_8794": 12,
+ "drop_countries": [
+  "Zimbabwe",
+  "Botswana",
+  "Swaziland",
+  "Lesotho",
+  "Zambia",
+  "Namibia",
+  "Kenya"
+ ],
+ "drop_vals": {
+  "Zimbabwe": -22.4,
+  "Botswana": -17.0,
+  "Swaziland": -13.8,
+  "Lesotho": -12.6,
+  "Zambia": -11.6,
+  "Namibia": -9.4,
+  "Kenya": -8.3
+ },
+ "steps_down": 102,
+ "steps_total": 1562,
+ "r2_2007": 0.65,
+ "slope": 16.6,
+ "over": {
+  "Vietnam": 13.1,
+  "Nicaragua": 10.9,
+  "West Bank and Gaza": 10.7,
+  "Comoros": 10.5,
+  "Korea, Dem. Rep.": 9.2
+ },
+ "under": {
+  "Swaziland": -25.9,
+  "Angola": -23.3,
+  "Botswana": -22.2,
+  "South Africa": -21.4,
+  "Equatorial Guinea": -21.1
+ },
+ "double_income_years": 5.0,
+ "cont_le": {
+  "Africa": [
+   38.8,
+   54.6
+  ],
+  "Americas": [
+   60.2,
+   75.4
+  ],
+  "Asia": [
+   42.9,
+   69.4
+  ],
+  "Europe": [
+   64.9,
+   77.9
+  ],
+  "Oceania": [
+   69.2,
+   81.1
+  ]
+ },
+ "cont_gdp": {
+  "Africa": [
+   1311,
+   2561
+  ],
+  "Americas": [
+   8528,
+   21603
+  ],
+  "Asia": [
+   806,
+   5432
+  ],
+  "Europe": [
+   6097,
+   25244
+  ],
+  "Oceania": [
+   10136,
+   32885
+  ]
+ },
+ "africa_le_1987_2002": [
+  52.8,
+  53.4,
+  53.3,
+  53.3,
+  54.6
+ ],
+ "china": [
+  44.0,
+  50.5,
+  44.5,
+  73.0
+ ],
+ "china_gdp": [
+  400,
+  4959
+ ],
+ "india_le": [
+  37.4,
+  64.7
+ ],
+ "growth_gdp_med": 3.1
+}
